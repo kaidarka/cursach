@@ -7,14 +7,18 @@ export const flats = [
         img: [
             '/flatsPhotos/1.jpg'
         ],
+        author: 123,
+        date: 12343,
+        description: "fdsfds",
     },
     {
         id: 2,
-        metro: 'Василеостовская',
-        cost: 35000,
+        metro: 'Петрога',
+        cost: 100000,
         square: 29,
         img: [
             '/flatsPhotos/1.jpg'
         ],
     },
+
 ];

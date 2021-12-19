@@ -1,5 +1,5 @@
 import React from 'react';
-import {flats} from "./flats";
+import {flats} from "../../flats";
 
 
 const Last = () => {

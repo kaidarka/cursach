@@ -1,19 +1,15 @@
 import './App.css';
-import Header from "./Header";
-import Last from "./Last";
-import Map from "./Map";
-import Footer from "./Footer";
+import 'antd/dist/antd.css';
+import {BrowserRouter} from "react-router-dom";
+import AppRouter from "./AppRouter";
 
 
 function App() {
 
     return (
-        <div className="App">
-            <Header/>
-            <Last/>
-            <Map/>
-            <Footer/>
-        </div>
+        <BrowserRouter>
+            <AppRouter/>
+        </BrowserRouter>
     );
 }
 
