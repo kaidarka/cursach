@@ -1,12 +1,12 @@
 import React, {useContext} from 'react';
 import logo from '../image/logo.svg';
-import Filter from "./Filter";
+import Filter from "./Main/Filter";
 import {Button} from "antd";
 import {Context} from "../index";
 import firebase from "firebase/compat";
 import {useAuthState} from "react-firebase-hooks/auth";
-import {NavLink} from "react-router-dom";
-import {ADD_ROUTE} from "../utils/consts";
+import {Link, NavLink} from "react-router-dom";
+import {ADD_ROUTE, MAIN_ROUTE} from "../utils/consts";
 
 const Header = () => {
     const {auth} = useContext(Context);
@@ -19,9 +19,11 @@ const Header = () => {
     return (
         <header className="header">
             <div className="topbar">
-                <div className="topbar-tittle_text">
-                    <img src={logo} alt="Abobuilding"/>
-                </div>
+                <NavLink to={MAIN_ROUTE}>
+                    <div className="topbar-tittle_text">
+                        <img src={logo} alt="Abobuilding"/>
+                    </div>
+                </NavLink>
                 <div className="topbar-button">
                     <div><a href="/">главная</a></div>
                     <div><a href="/">новости</a></div>
@@ -38,7 +40,6 @@ const Header = () => {
                     )}
                 </div>
             </div>
-            <Filter/>
         </header>
     )
 };

@@ -15,12 +15,12 @@ export const publicRoutes =  [
  ]
 export const privateRoutes =  [
     {
-        path: MAIN_ROUTE,
-        Component: Home
-    },
-    {
         path: ADD_ROUTE,
         Component: AddFlat
+    },
+    {
+        path: MAIN_ROUTE,
+        Component: Home
     },
     {
         path: LIST_ROUTE,

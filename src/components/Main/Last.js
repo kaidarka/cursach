@@ -10,7 +10,7 @@ const Last = () => {
                 <div className="options">
                     {flats.map(item => {
                         return (
-                            <div className="option">
+                            <div key={item.id} className="option">
                                 <img src={process.env.PUBLIC_URL + item.img} className="option-image"/>
                                 <div className="option-description">
                                     <div className="option-description-line1">

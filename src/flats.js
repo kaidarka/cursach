@@ -8,7 +8,6 @@ export const flats = [
             '/flatsPhotos/1.jpg'
         ],
         author: 123,
-        date: 12343,
         description: "fdsfds",
     },
     {

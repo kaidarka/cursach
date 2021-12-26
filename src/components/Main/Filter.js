@@ -29,7 +29,6 @@ const Filter = () => {
 
     return (
         <div className="search-block">
-
             <div className="search">
                 <Select
                     mode="multiple"
@@ -40,8 +39,8 @@ const Filter = () => {
                 >
                     {roomsChildren}
                 </Select>
-                <Input placeholder="Цена от" size="large" value={costMin} onChage={handleCostMin} />
-                <Input placeholder="Цена до" size="large" value={costMax} onChage={handleCostMax} />
+                <Input placeholder="Цена от" size="large" value={costMin} onChange={handleCostMin} />
+                <Input placeholder="Цена до" size="large" value={costMax} onChange={handleCostMax} />
                 <Select
                     mode="multiple"
                     allowClear

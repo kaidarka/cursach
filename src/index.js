@@ -2,11 +2,10 @@ import React, {createContext} from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import { initializeApp } from "firebase/app";
 import firebase from "firebase/compat";
 import "firebase/firestore";
+import 'firebase/storage'
 import "firebase/auth";
-import {Comment} from "antd";
 
 
 firebase.initializeApp({
@@ -22,12 +21,14 @@ export const Context = createContext(null);
 
 const auth = firebase.auth();
 const firestore = firebase.firestore();
+const storage = firebase.storage();
 
 ReactDOM.render(
     <Context.Provider value={{
         firebase,
         auth,
-        firestore
+        firestore,
+        storage
     }}>
         <React.StrictMode>
             <App />

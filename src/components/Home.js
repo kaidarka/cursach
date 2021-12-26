@@ -2,12 +2,12 @@ import React from 'react';
 import Last from "./Main/Last";
 import Map from "./Main/Map";
 import Footer from "./Footer";
-import Header from "./Header";
+import Hero from "./Main/Hero";
 
 const Home = () => {
     return (
         <>
-            <Header/>
+            <Hero/>
             <Last/>
             <Map/>
             <Footer/>
