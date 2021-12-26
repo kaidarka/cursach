@@ -1,17 +1,20 @@
 import React from 'react';
-import {flats} from "../../flats";
+import useFirestore from "../hooks/useFirestore";
 
 
 const Last = () => {
+
+    const flats = useFirestore('flats');
+    console.log(flats)
     return (
         <section className="main">
             <div className="options-section">
                 <div className="options-tittle">Последние варианты</div>
                 <div className="options">
-                    {flats.map(item => {
+                    {flats.docs.slice(0, 6).map(item => {
                         return (
-                            <div key={item.id} className="option">
-                                <img src={process.env.PUBLIC_URL + item.img} className="option-image"/>
+                            <div key={item.cost} className="option">
+                                <img src={item.image} className="option-image"/>
                                 <div className="option-description">
                                     <div className="option-description-line1">
                                         <div>{item.cost} р.</div>
