@@ -1,11 +1,10 @@
 import React, {useContext} from 'react';
 import logo from '../image/logo.svg';
-import Filter from "./Main/Filter";
 import {Button} from "antd";
 import {Context} from "../index";
 import firebase from "firebase/compat";
 import {useAuthState} from "react-firebase-hooks/auth";
-import {Link, NavLink} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import {ADD_ROUTE, MAIN_ROUTE} from "../utils/consts";
 
 const Header = () => {
@@ -17,6 +16,7 @@ const Header = () => {
     }
 
     return (
+        //TODO стилизовать меню и кнопки, добавить шрифты
         <header className="header">
             <div className="topbar">
                 <NavLink to={MAIN_ROUTE}>

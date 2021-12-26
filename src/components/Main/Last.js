@@ -5,7 +5,6 @@ import useFirestore from "../hooks/useFirestore";
 const Last = () => {
 
     const flats = useFirestore('flats');
-    console.log(flats)
     return (
         <section className="main">
             <div className="options-section">
