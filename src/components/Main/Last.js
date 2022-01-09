@@ -18,8 +18,8 @@ const Last = () => {
                                 <img src={item.image} className="option-image"/>
                                 <div className="option-description">
                                     <div className="option-description-line1">
-                                        <div>{item.cost} р.</div>
-                                        <div>{item.square} кв. м</div>
+                                        <div><b>{item.cost}</b> р.</div>
+                                        <div><b className="option-bold">{item.square}</b> кв. м</div>
                                     </div>
                                     <div className="option-description-line2">м. {item.metro}</div>
                                 </div>
