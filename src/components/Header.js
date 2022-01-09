@@ -29,7 +29,7 @@ const Header = () => {
                     <div><a href="/">новости</a></div>
                     <div><a href="/">контакты</a></div>
                     {!user ?
-                        (<Button  type="primary" onClick={login}>Войти</Button>)
+                        (<Button id="topbar-login"  type="primary" onClick={login}>Войти</Button>)
                     :(
                         <>
                             <NavLink to={ADD_ROUTE}>
