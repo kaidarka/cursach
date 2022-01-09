@@ -10,7 +10,9 @@ const Last = () => {
             <div className="options-section">
                 <div className="options-tittle">Последние варианты</div>
                 <div className="options">
-                    {flats.docs.slice(0, 6).map(item => {
+                    {flats.docs.slice(0, 6)
+                        .sort((a,b) => a.date < b.date ? 1 : -1)
+                        .map(item => {
                         return (
                             <div key={item.cost} className="option">
                                 <img src={item.image} className="option-image"/>

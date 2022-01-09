@@ -29,6 +29,7 @@ const AddFlat = () => {
     const onFinish = (values) => {
         const collectionFlats = firestore.collection('flats');
         collectionFlats.add({
+            date: new Date(),
             image: url,
             description: values.description,
             metro: values.metro,
