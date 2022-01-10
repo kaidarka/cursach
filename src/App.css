@@ -18,6 +18,12 @@ body{
     height: 100vh;
     background: url("image/header-bg.jpg");
     background-size: cover;
+    transition: all .8s;
+}
+.hero_hide{
+    padding-top: 100px;
+    height: 400px;
+
 }
 /*Верхнее меню в хэдере*/
 .topbar{
@@ -99,7 +105,7 @@ body{
 .search{
     height: 100px;
     width: 100%;
-    margin: auto 200px;
+    margin: auto 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;

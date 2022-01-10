@@ -1,10 +1,10 @@
 import React from 'react';
 import Filter from "./Filter";
 
-const Hero = () => {
+const Hero = ({ setFilter, filter }) => {
     return (
-        <div className="hero">
-            <Filter/>
+        <div className={filter == null ? "hero" : "hero hero_hide"}>
+            <Filter setFilter={setFilter}/>
         </div>
     );
 };
