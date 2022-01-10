@@ -7,7 +7,6 @@ import List from "./List/List";
 
 const Home = () => {
     const [ filter, setFilter ] = useState(null)
-    console.log(filter);
     if (filter === null) {
         return (
             <>
