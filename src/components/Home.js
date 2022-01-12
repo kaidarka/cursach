@@ -10,7 +10,7 @@ const Home = () => {
     if (filter === null) {
         return (
             <>
-                <Hero setFilter={setFilter}/>
+                <Hero filter={filter} setFilter={setFilter}/>
                 <Last/>
                 <Map/>
                 <Footer/>
@@ -20,7 +20,7 @@ const Home = () => {
         return (
             <>
                 <Hero setFilter={setFilter} filter={filter}/>
-                <List/>
+                <List filter={filter} />
                 <Footer/>
             </>
         )

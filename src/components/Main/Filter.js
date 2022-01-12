@@ -37,7 +37,6 @@ const Filter = ({ setFilter }) => {
     const handleMetro = (e) => {
         e.length === 0 ? setMetro(null) : setMetro(e);
     }
-    console.log(costMax)
 
     return (
         //TODO стилизовать инпуты и кнопку
