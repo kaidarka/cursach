@@ -1,5 +1,6 @@
 import React from 'react';
 import useFirestore from "../hooks/useFirestore";
+import {NavLink} from "react-router-dom";
 
 const List = ({ filter }) => {
     const flats  = useFirestore('flats');
@@ -23,16 +24,18 @@ const List = ({ filter }) => {
             {filteredFlats.sort((a, b) => a.date < b.date ? 1 : -1)
                 .map(item => {
                     return (
-                        <div key={item.cost} className="option">
-                            <img src={item.image} className="option-image"/>
-                            <div className="option-description">
-                                <div className="option-description-line1">
-                                    <div><b>{item.cost}</b> р.</div>
-                                    <div><b className="option-bold">{item.square}</b> кв. м</div>
+                        <NavLink to={`/${item.id}`}>
+                            <div key={item.cost} className="option">
+                                <img src={item.image} className="option-image"/>
+                                <div className="option-description">
+                                    <div className="option-description-line1">
+                                        <div><b>{item.cost}</b> р.</div>
+                                        <div><b className="option-bold">{item.square}</b> кв. м</div>
+                                    </div>
+                                    <div className="option-description-line2">м. {item.metro}</div>
                                 </div>
-                                <div className="option-description-line2">м. {item.metro}</div>
                             </div>
-                        </div>
+                        </NavLink>
                     )
                 })}
 

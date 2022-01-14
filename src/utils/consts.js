@@ -1,8 +1,8 @@
 import {Select} from "antd";
 
-export const LIST_ROUTE = '/list';
 export const ADD_ROUTE = '/add';
 export const MAIN_ROUTE = '/';
+export const CARD_ROUTE = '/:id';
 
 const { Option } = Select;
 

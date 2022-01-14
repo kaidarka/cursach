@@ -1,12 +1,12 @@
-import {ADD_ROUTE, LIST_ROUTE, MAIN_ROUTE} from "./utils/consts";
-import List from "./components/List/List";
+import {ADD_ROUTE, CARD_ROUTE, MAIN_ROUTE} from "./utils/consts";
 import AddFlat from "./components/AddFlat/AddFlat";
 import Home from "./components/Home";
+import Card from "./components/Card/Card";
 
 export const publicRoutes =  [
     {
-        path: LIST_ROUTE,
-        Component: List
+        path: CARD_ROUTE,
+        Component: Card
     },
     {
         path: MAIN_ROUTE,
@@ -23,7 +23,7 @@ export const privateRoutes =  [
         Component: Home
     },
     {
-        path: LIST_ROUTE,
-        Component: List
+        path: CARD_ROUTE,
+        Component: Card
     },
 ]
