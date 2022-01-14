@@ -139,10 +139,12 @@ body{
 .ant-input{
     color: #ccc!important;
 }
-.anticon{
+.anticon-search{
     margin-top: 12px!important;
 }
-.ant-select-selection-overflow-item-suffix{
+.ant-select-clear {
+    background: none!important;
+    color: #fff!important;
 
 }
 /*Последние варианты*/
@@ -172,7 +174,7 @@ body{
     display: block;
     /*min-width: 380px;*/
     width: auto;
-    height: 85%;
+    height: 95%;
     position: relative;
     border-radius: 30px 30px 0px 0px;
 }
@@ -212,6 +214,7 @@ body{
     color: black!important;
     /*width: 380px;*/
 }
+/*Карта*/
 .map-tittle{
     text-align: center;
     font-size: 44px;
@@ -227,6 +230,7 @@ body{
     /*filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.25));*/
     /*border-radius: 49px;*/
 }
+/*Права*/
 .rights{
     background-color: #343434;
     width: 100%;
@@ -279,13 +283,13 @@ body{
     border-radius: 30px;
 }
 .info-text{
-    font-family: Lato;
+    font-family: Monsterrat;
     font-style: normal;
     font-weight: 300;
     font-size: 32px;
     line-height: 48px;
     padding: 0 30px;
-    width: 50%;
+    width: 60%;
 }
 .info-text div:first-child{
     display: flex;
@@ -322,3 +326,4 @@ body{
     display: flex;
     justify-content: center;
 }
+
