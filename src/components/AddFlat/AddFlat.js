@@ -124,7 +124,7 @@ const AddFlat = () => {
 
 
                 <Form.Item wrapperCol={{offset: 8, span: 16}}>
-                    <Button type="primary" htmlType="submit">Сохранить</Button>
+                    <Button className="save-button" type="primary" htmlType="submit">Сохранить</Button>
                 </Form.Item>
             </Form>
         );
