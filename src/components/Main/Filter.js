@@ -64,7 +64,7 @@ const Filter = ({ setFilter }) => {
                 >
                     {metroChildren}
                 </Select>
-                <Button icon={<SearchOutlined />} onClick={searchButton}>Искать</Button>
+                <Button className="search__button" icon={<SearchOutlined />} onClick={searchButton}>Искать</Button>
             </div>
         </div>
     );
