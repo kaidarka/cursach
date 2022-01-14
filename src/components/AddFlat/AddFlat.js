@@ -57,7 +57,8 @@ const AddFlat = () => {
                 onFinishFailed={onFinishFailed}
                 autoComplete="off"
             >
-                <input type='file' onChange={changeImgHandler}/>
+                <div className="add__input-name"><div>Выберите фотографию</div></div>
+                <input className="add__input-file" type='file' onChange={changeImgHandler} Выберите фотографию/>
                 {error && <div className="error">{error}</div>}
                 {file && <div className="success">{file.name}</div>}
                 {file && <ProgressBar file={file} setFile={setFile} setUrl={setUrl}/>}

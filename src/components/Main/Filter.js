@@ -43,6 +43,7 @@ const Filter = ({ setFilter }) => {
         <div className="search-block">`
             <div className="search">
                 <Select
+                    className="search-input"
                     mode="multiple"
                     allowClear
                     style={{ width: 200 }}
@@ -52,9 +53,10 @@ const Filter = ({ setFilter }) => {
                 >
                     {roomsChildren}
                 </Select>
-                <Input placeholder="Цена от" size="large" style={{ width: 200 }} value={costMin} onChange={handleCostMin}/>
-                <Input placeholder="Цена до" size="large" style={{ width: 200 }} value={costMax} onChange={handleCostMax}/>
+                <Input className="search-input" placeholder="Цена от" size="large" style={{ width: 200 }} value={costMin} onChange={handleCostMin}/>
+                <Input className="search-input" placeholder="Цена до" size="large" style={{ width: 200 }} value={costMax} onChange={handleCostMax}/>
                 <Select
+                    className="search-input"
                     mode="multiple"
                     allowClear
                     style={{ width: 200 }}
