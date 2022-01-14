@@ -26,9 +26,9 @@ const Header = () => {
                     </div>
                 </NavLink>
                 <div className="topbar-button">
-                    <div><a href="/">Главная</a></div>
-                    <div><a href="/">Новости</a></div>
-                    <div><a href="/">Контакты</a></div>
+                    <div><NavLink to={MAIN_ROUTE}>Главная</NavLink></div>
+                    <div><NavLink to={MAIN_ROUTE}>Новости</NavLink></div>
+                    <div><NavLink to={MAIN_ROUTE}>Контакты</NavLink></div>
                     {!user ?
                         (<Button id="topbar-login"  type="primary" onClick={login}>Войти</Button>)
                     :(

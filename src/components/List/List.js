@@ -24,8 +24,8 @@ const List = ({ filter }) => {
             {filteredFlats.sort((a, b) => a.date < b.date ? 1 : -1)
                 .map(item => {
                     return (
-                        <NavLink to={`/${item.ids}`}>
-                            <div key={item.cost} className="option">
+                        <div key={item.ids} className="option">
+                            <NavLink to={`/${item.ids}`}>
                                 <img src={item.image} className="option-image"/>
                                 <div className="option-description">
                                     <div className="option-description-line1">
@@ -34,8 +34,8 @@ const List = ({ filter }) => {
                                     </div>
                                     <div className="option-description-line2">м. {item.metro}</div>
                                 </div>
-                            </div>
-                        </NavLink>
+                            </NavLink>
+                        </div>
                     )
                 })}
 
