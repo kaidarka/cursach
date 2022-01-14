@@ -18,13 +18,13 @@ const List = ({ filter }) => {
     if (filter.metro != null) {
         filteredFlats = filteredFlats.filter(flat => filter.metro.includes(flat.metro));
     }
-
+    console.log(filteredFlats)
     return (
         <div className="options">
             {filteredFlats.sort((a, b) => a.date < b.date ? 1 : -1)
                 .map(item => {
                     return (
-                        <NavLink to={`/${item.id}`}>
+                        <NavLink to={`/${item.ids}`}>
                             <div key={item.cost} className="option">
                                 <img src={item.image} className="option-image"/>
                                 <div className="option-description">

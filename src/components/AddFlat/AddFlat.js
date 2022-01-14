@@ -25,10 +25,11 @@ const AddFlat = () => {
             setError('Выберите подходящий файл (png/jpeg)');
         }
     }
-
+    const id = Math.floor(Math.random() * 100000).toLocaleString();
     const onFinish = (values) => {
         const collectionFlats = firestore.collection('flats');
         collectionFlats.add({
+            ids: id,
             date: new Date(),
             image: url,
             description: values.description,
@@ -124,7 +125,7 @@ const AddFlat = () => {
 
 
                 <Form.Item wrapperCol={{offset: 8, span: 16}}>
-                    <Button type="primary" htmlType="submit">Сохранить</Button>
+                    <button className="save-btn" type="submit">Сохранить</button>
                 </Form.Item>
             </Form>
         );
