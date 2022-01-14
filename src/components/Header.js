@@ -16,8 +16,6 @@ const Header = () => {
     }
 
     return (
-        //TODO стилизовать меню и кнопки, добавить шрифты
-        //TODO бордер у картинок, стиль у кнопок, можно ещё растянуть картинки, чтобы они по высоте
         <header className="header">
             <div className="topbar">
                 <NavLink to={MAIN_ROUTE}>

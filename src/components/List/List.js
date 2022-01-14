@@ -18,7 +18,6 @@ const List = ({ filter }) => {
     if (filter.metro != null) {
         filteredFlats = filteredFlats.filter(flat => filter.metro.includes(flat.metro));
     }
-    console.log(filteredFlats)
     return (
         <div className="options">
             {filteredFlats.sort((a, b) => a.date < b.date ? 1 : -1)
@@ -36,7 +35,6 @@ const List = ({ filter }) => {
                                 </div>
                             </div>
                         </NavLink>
-
                     )
                 })}
 
