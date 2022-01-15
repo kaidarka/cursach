@@ -17,4 +17,8 @@ export const roomsChildren = [
 export const metroChildren = [
     <Option key={'Василеостровская'}>Василеостровская</Option>,
     <Option key={'Петроградская'}>Петроградская</Option>,
+    <Option key={'Обводный канал'}>Обводный канал</Option>,
+    <Option key={'Фрунзенская'}>Фрунзенская</Option>,
+    <Option key={'Лиговский проспект'}>Лиговский проспект</Option>,
+    <Option key={'Черная речка'}>Черная речка</Option>,
 ];

@@ -5,6 +5,7 @@ import TextArea from "antd/es/input/TextArea";
 import {Option} from "antd/es/mentions";
 import ProgressBar from "./ProgressBar";
 import {Redirect} from "react-router-dom";
+import {metroChildren} from "../../utils/consts";
 
 const AddFlat = () => {
     const {firestore} = useContext(Context);
@@ -119,8 +120,7 @@ const AddFlat = () => {
                             optionA.children.toLowerCase().localeCompare(optionB.children.toLowerCase())
                         }
                     >
-                        <Option value="Василеостровская">Василеостровская</Option>
-                        <Option value="Петроградская">Петроградская</Option>
+                        {metroChildren}
                     </Select>
                 </Form.Item>
 
