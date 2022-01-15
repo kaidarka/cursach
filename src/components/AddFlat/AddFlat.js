@@ -59,7 +59,7 @@ const AddFlat = () => {
                 autoComplete="off"
             >
                 <div className="add__input-name"><div>Выберите фотографию</div></div>
-                <input className="add__input-file" type='file' onChange={changeImgHandler} Выберите фотографию/>
+                <input className="add__input-file" type='file' onChange={changeImgHandler}/>
                 {error && <div className="error">{error}</div>}
                 {file && <div className="success">{file.name}</div>}
                 {file && <ProgressBar file={file} setFile={setFile} setUrl={setUrl}/>}
@@ -67,7 +67,7 @@ const AddFlat = () => {
                 <Form.Item
                     label="Описание"
                     name="description"
-                    rules={[{required: true, message: 'Ведите описание!'}]}
+                    rules={[{required: true, message: 'Введите описание!'}]}
                 >
                     <TextArea rows={5}/>
                 </Form.Item>
@@ -75,7 +75,7 @@ const AddFlat = () => {
                 <Form.Item
                     label="Цена"
                     name="cost"
-                    rules={[{required: true, message: 'Ведите цену!'}]}
+                    rules={[{required: true, message: 'Введите цену!'}]}
                 >
                     <Input prefix="₽" suffix="РУБ" style={{width: 200}}/>
                 </Form.Item>
@@ -83,7 +83,7 @@ const AddFlat = () => {
                 <Form.Item
                     label="Площадь"
                     name="square"
-                    rules={[{required: true, message: 'Ведите площадь!'}]}
+                    rules={[{required: true, message: 'Введите площадь!'}]}
                 >
                     <Input suffix="кв. м" style={{width: 200}}/>
                 </Form.Item>
@@ -91,7 +91,7 @@ const AddFlat = () => {
                 <Form.Item
                     label="Кол-во комнат"
                     name="rooms"
-                    rules={[{required: true, message: 'Выберете метро!'}]}
+                    rules={[{required: true, message: 'Выберите метро!'}]}
                 >
                     <Select
                         style={{width: 200}}
@@ -106,7 +106,7 @@ const AddFlat = () => {
                 <Form.Item
                     label="Метро"
                     name="metro"
-                    rules={[{required: true, message: 'Выберете метро!'}]}
+                    rules={[{required: true, message: 'Выберите метро!'}]}
                 >
                     <Select
                         showSearch
